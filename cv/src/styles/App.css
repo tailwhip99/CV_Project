@@ -1,0 +1,123 @@
+.App {
+  font-family: 'Raleway', sans-serif;
+  display:flex ;
+ 
+  text-align: center;
+  border:2px solid rgb(0, 0, 0);
+ border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  
+  margin:5vh 20vh 5vh 20vh;
+}
+body {
+  background-image: url('https://stories.isu.pub/75957718/images/6_original_file_I0.png');
+
+  object-fit:cover;
+
+  justify-content:center;
+  display:flex;
+
+}
+.addJob {
+top:80%;
+left:70%;
+  display:flex;
+  flex-direction: row;
+position:fixed;
+  align-items:center;
+ justify-content: right;
+ right:20%;
+ gap:10px;
+ width:350px;
+
+}
+.addJob p {
+  color: black;
+  font-weight:bold;
+  text-shadow:  3px  black;
+  font-size:15px;
+  
+}
+
+.addJob button {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  color:#000000;
+ text-shadow: 1px 1px black;
+ border:2px dashed rgb(0, 0, 0) ;
+  border-radius: 60px;
+  height:80px;
+  width:80px;
+  font-size: 40px;
+  font-weight: 1000;
+}
+
+
+
+.Date {
+  color:white;
+}
+
+
+
+
+@media (max-width:1000px) {
+  
+  .App {
+    display:flex;
+    height:max-content
+  
+  }
+  .addJob {
+    top:17%;
+    left: -2%;
+  }
+  .addJob button {
+  visibility: hidden;
+  
+  }
+  .addyourjob {
+  
+  }
+  .addJob p {
+   color:white;
+  }
+}
+  
+  
+
+
+@media (max-width:700px) {
+ 
+  .addJob button {
+    visibility: hidden;
+    
+    }
+  
+}
+
+@media (max-width:600px) {
+  .addJob button {
+    visibility: hidden;
+    
+    }
+  
+  
+ 
+}
+@media (max-width:500px) {
+ 
+  .addJob button {
+    visibility: hidden;
+    
+    }
+
+}
+
+
+
+
+
+

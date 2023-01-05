@@ -1,0 +1,112 @@
+.newJob {
+  margin:0;
+  padding:0;
+    top:20%;
+    left:30%;
+    position: fixed;
+    width:550px;
+    height:330px;
+    background-color: #1f2937;
+   visibility: hidden;
+    align-content: center;
+    padding-top:15px;
+   
+  }
+ .newJob label {
+  color:aliceblue
+ }
+ .newJob h1 {
+  color:aliceblue
+ }
+ .newJob label {
+  font-size:13px;
+ }
+
+  .closeButton {
+    
+    width:530px;
+    display:flex;
+   justify-content: end;
+   
+     
+    }
+    .closeButton button {
+      height:20px;
+      width:20px;
+      border-radius: 20px;
+      border:none
+    }
+    
+  .newJob_title {
+   
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    margin-bottom:10px;
+  }
+
+  .newJob_title h1 {
+  
+    margin:0;
+  }
+
+  
+  
+  .first-line {
+   
+    display:flex;
+   gap:10px;
+   justify-content: center;
+   align-items: center;
+   
+    
+  }
+  .first-line input {
+  
+ 
+    font-size: small;
+    }
+
+  
+.from , .to {
+  width:40px
+}
+  
+
+
+  
+  
+  .second-line {
+ display:flex ;
+ justify-content: center;
+margin-bottom:10px;
+ 
+ 
+  }
+
+  .second-line input {
+    
+   
+    font-size: small;
+  }
+
+  .third-line {
+    display:flex;
+    justify-content: center;
+    margin-bottom:10px;
+  }
+  .third-line textarea {
+    width: 360px;
+    height: 70px;
+  }
+
+  .fourth-line {
+    display:flex;
+    justify-content: center;
+    margin-bottom:10px;
+  }
+  .fourth-line textarea {
+    width: 360px;
+    margin-left:10px;
+   
+  }
