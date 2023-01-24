@@ -1,9 +1,16 @@
 import React, { Component } from 'react'
-import './styles/App.css';
+
+
 import Contacts from './components/Contacts.js';
 import Career from './components/Career.js';
-import "./styles/NewJob.css"
+import AddPic from './components/AddPic.js'
+
 import uniqid from "uniqid";
+
+import './styles/App.css';
+import "./styles/NewJob.css"
+import "./styles/NewPic.css"
+import "./styles/Contacts.css"
 
 class App extends Component {
   constructor() {
@@ -24,7 +31,7 @@ class App extends Component {
       jobs: [
         {
           id: uniqid(),
-          company: "YeahBoi",
+          company: "Microsoft",
           from: "2019",
           to: "2022",
           title:"Manager",
@@ -34,7 +41,7 @@ class App extends Component {
         },
         {
           id: uniqid(),
-          company: "NoQay",
+          company: "Apple",
           from: "2018",
           to: "2019",
           title:"Webdesigner",
@@ -44,7 +51,7 @@ class App extends Component {
         },
         {
           id: uniqid(),
-          company: "WWW",
+          company: "IWIW",
           from: "2015",
           to: "2029",
           title:"Nurse",
@@ -165,6 +172,10 @@ sentence_handleChange = e => {
   })
 };
 onSubmitJob = e => {
+
+
+
+
   e.preventDefault();
   this.setState({
     jobs: this.state.jobs.concat(this.state.job),
@@ -181,12 +192,16 @@ onSubmitJob = e => {
    
   
 
-    
-  })
-  
 
- this.CloseNewJob()
+  } 
+  ) 
+  this.CloseNewJob() 
+ 
 }
+
+
+
+
 
 ResetForm = e => {
    let inputs = document.querySelectorAll('input')
@@ -201,7 +216,7 @@ OpenNewJob = () => {
   newjob.style.visibility = 'visible'
 
 }
- CloseNewJob() {
+ CloseNewJob = () => {
 
   const newJob = document.querySelector('.newJob')
       newJob.style.visibility = 'hidden'
@@ -209,26 +224,30 @@ OpenNewJob = () => {
       
  }
 
- HideAddJob() {
+ HideAddJob = () => {
   const addJob = document.querySelector('.addJob')
   addJob.style.visibility='hidden'
 
  }
- RevealAddJob() {
+ RevealAddJob = () => {
   const addJob = document.querySelector('.addJob')
   addJob.style.visibility='visible'
   this.CloseNewJob()
  }
+ 
+ 
 
   render() {
     const {jobs} = this.state;
+
     return (
       <div className="App">
         <Contacts  />
         <Career jobs={jobs} />
-       
+       <AddPic/>
+
         <div className="addJob">
-          <p></p>
+          <p>  Add your previous job! </p>
          <button onClick={this.OpenNewJob}>+</button>
         </div>
         <form method="get" id="new-job">
@@ -236,35 +255,78 @@ OpenNewJob = () => {
           <div className="closeButton">
           <button type="reset" onClick={this.CloseNewJob}>X</button>
           </div>
-         <div className="addyourjob">
+         <div >
           <h1>Add your previous job!</h1>
           
           </div>
           <div className="first-line">
             
             <label htmlfor="company">Company</label>
-          <input onChange={this.company_handleChange}  className="Company" type="text" name="Company" placeholder="Company name" required  ></input>
+          <input onChange={this.company_handleChange}  className="Company" type="text" name="Company" id="company" placeholder="Company name" required  ></input>
           
           <label htmlfor="Start Date">Date</label>
-          <input onChange={this.from_handleChange}   className="from" type="text" name="from" placeholder="From"  required  ></input>
+          <input onChange={this.from_handleChange} 
+            className="from" 
+            type="text" 
+            name="from"
+            id="from" 
+            placeholder="From"
+            maxlength="4"
+            pattern="[0-9]+"
+            required  >
+
+            </input>
           <p className="Date">-</p>
       
-          <input onChange={this.to_handleChange}  className="to" type="text" name="to" placeholder="To"  required   ></input>
+          <input onChange={this.to_handleChange} 
+           className="to"
+            type="text"
+            name="to"
+            placeholder="To"
+            id="to"
+            maxlength="4"
+            pattern="[0-9]+"
+            required   >
+
+            </input>
         
           </div>
 
           <div className="second-line">
-          
+         <div className="left">
           <label htmlfor="Title">Job Title</label>
-          <input onChange={this.title_handleChange}  className="JobTitle" type="text" name="JobTitle" placeholder="JOB TITLE" required  ></input>
+          <input onChange={this.title_handleChange}  
+
+          className="JobTitle"
+          type="text" 
+          name="JobTitle"
+          placeholder="JOB TITLE"
+          required 
+             >
+             </input>
           
-          <label htmlfor="Title">Job Location</label>
-          <input onChange={this.location_handleChange}  className="location" type="text" name="Locations" placeholder="Location" required   ></input>
-          
+          <label htmlfor="Location">Job Location</label>
+          <input onChange={this.location_handleChange}  
+          className="location" 
+          type="text" 
+          name="Locations" 
+          placeholder="Location" 
+          required   
+          >
+
+          </input>
+
           </div>
+          </div>
+
+
           <div className="third-line">
           <label htmlfor="Description">Description</label>
-          <textarea onChange={this.description_handleChange} name="description" placeholder="In a short statement of no more than a few sentences describe your role in the company and outline your key and main responsibilites. Give a brief outline of your job role and also any other important duties." ></textarea>
+          <textarea onChange={this.description_handleChange} 
+          name="description" 
+          placeholder="In a short statement of no more than a few sentences describe your role in the company and outline your key and main responsibilites. Give a brief outline of your job role and also any other important duties." >
+
+          </textarea>
           
           </div>
           
@@ -273,7 +335,7 @@ OpenNewJob = () => {
           <label htmlfor="Sentence">Sentence</label>
           <textarea onChange={this.sentence_handleChange}  name="sentence" placeholder="A sentence describing your duties,keep them relevant to the job" ></textarea>
           </div>
-          <button onClick={this.onSubmitJob} type="submit">Add task</button>
+          <button className="addTask" onClick={this.onSubmitJob} >Add job</button>
          
         </div>
         </form>

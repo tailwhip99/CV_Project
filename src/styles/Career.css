@@ -8,16 +8,17 @@
    border:none
 }
 .Career {
-   padding: 20px 0px 20px 20px;
+   padding: 2vw 0px 2vw 2vw;
    display:flex;
    flex-direction: column;
-  
+
   
    align-items: flex-start;
   
     
 }
 .name, .job , .career {
+ 
     padding:0 ;
     margin:0;
     font-family: Raleway;
@@ -25,11 +26,11 @@
 }
 
 .name {
-    font-size: 70px;
+
+    font-size: 4vw;
     border:0;
-    width:500px;
+   
     font-weight: bold;
-    margin-left:0;
   
 }
 .name:hover , .job:hover {
@@ -39,14 +40,14 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size:50px;
-    width:450px;
+    font-size:3vw;
+ 
     border:0;
 }
 
 h4 {
-    font-size : 30px;
-  
+    font-size : 2vw;
+
    
 }
 
@@ -58,13 +59,13 @@ padding:0;
 }
 
 .Intro {
-  width:80vh;
+  width:40vw;
 
    display:flex;
-
-   
-    padding-top:60px;
-    border-bottom:solid black 1px;
+gap:2px;
+ align-items: center;
+    padding-top:1vw;
+    border-bottom:solid black 0.2vh;
     margin:0;
    
     
@@ -72,6 +73,21 @@ padding:0;
 
 
 
+}
+.Intro button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color:#000000;
+
+   border:0.05vw solid rgb(0, 0, 0) ;
+    border-radius: 100px;
+    height:2vw;
+    width:2vw;
+    font-size: 5vw;
+    font-weight: 1;
+ visibility: hidden;
 }
 
 .Intro h4 {
@@ -81,23 +97,27 @@ padding:0;
 
 
 .cjob {
-    background-color: rgb(253, 253, 253);
-margin-bottom:10px;
-margin-top:10px;
+
+    background-color: rgb(255, 255, 255);
+margin-bottom:2vh;
+margin-top:2vh;
 padding:0;
 
 
-width:400px;
+width:40vw;
 
 }
 .cjob button {
+    
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(99, 171, 226);
+  
+    background-color: rgb(99, 188, 226);
     color:rgb(255, 255, 255);
     font-weight: bold;
-    border:none
+    border:none;
+    
 }
 
 .cjob button:hover {
@@ -107,45 +127,49 @@ opacity:0.5
 .c-first-line {
     color:black;
     display:flex;
-   
+    font-size:1.5vw;
     align-items: centers;
     padding:0;
     margin:0;
-    height:20px;
+
 }
 
 .jcompany {
-    margin-right:230px;
+    margin-right:16vw;
     font-weight: bold;
    
     
 }
 .jfromto {
-    margin-right:10px;
+   margin-left:5vw;
+ 
+    margin-right:1vw;
     font-weight: bold;
 }
 
 .c-first-line button {
-
+   font-size: 1vw;
     display:flex;
     justify-content: center;
-    border-radius: 40px;
-    width:20px;
-    height:20px;
-    margin-top:15px;
+    border-radius: 3vw;
+    width:2vw;
+    height:2vw;
+    margin-top:1.5vw;
 }
 
 .c-second-line {
     display:flex;
-    padding-bottom:10px;
+    padding-bottom:2vw;
+    font-size:1.2vw;
     margin:0;
-    height:20px;
+    height:2vw;
     color:rgb(101, 101, 101);
     font-weight: bolder;
 }
 .c-third-line  {
-   
-    width:380px;
+    background-color: rgb(249, 249, 249);
+    font-size: 1.5vw;
+    width:36vw;
     display:flex;
     justify-content:left;
     color:rgb(163, 163, 163);
@@ -158,119 +182,20 @@ opacity:0.5
     font-style: italic;
     color:rgb(74, 74, 74);
     font-weight: bolder;
-    
+    font-size: 1.5vw;
  
     display:flex;
-    border-bottom: 3px dotted black;
+    border-bottom: 0.5vh dotted black;
     
    
 }
-@media (max-width:1000px) {
-    .name {
-        width:300px;
-        font-size:20px
-    }
-    .job {
-        width: 300px;
-       padding:0;
-    }
-    .job ,.career {
-        font-size:20px;
-    }
-    .Intro {
-      width:200px;
-        margin-top: 10px;
-        padding:0;
-    }
-     .Intro h4 {
-        padding:0;
-        margin:0;
-        font-size:15px;
-       
-       
-     }
-
-     .cjob {
-        width: 280px;
-       
-        font-size:70%;
-        padding:0;
-        margin:0;
-     }
-     .jcompany {
-        margin-right: 50%;
-     }
-     .c-first-line button {
-        height: 70%;
-        width:5%;
-        margin-top: 7px;
-
-        font-size: smaller;
-     }
-
-     .c-third-line {
-        width: 80%;
-       
-     justify-items: flex-start;
-     }
-    
-
-
-
-    
-}
-
-@media (max-width:700px) {
-    .name {
-        width:200px;
-        font-size:20px
-    }
-    .job {
-        width: 200px;
-       
-    }
-    .job , .career {
-        font-size:10px; 
-    }
-    .Intro h4 {
-        font-size:15px;
-    }
-    .Intro {
-        width: 20vh;
-     }
-
-     .cjob {
-       
-      
-        font-size:50%;
-        padding:0;
-        margin:0;
-     }
-    
-}
-
 @media (max-width:500px) {
-    .name {
-        font-size:25px;
-        width:150px;
-    }
-    .job {
-        width: 100px;
-    }
-    .job ,.career {
-        font-size:10px;
-    }
-    .Intro {
-        width: 15vh;
-     }
-     .cjob {
-      
-       
-      
-        font-size:40%;
-        padding:0;
-        margin:0;
-     }
-    
+  
 }
-
+@media (max-width:800px) {
+    .Intro button{
+      visibility: visible;
+    }
+    
+  }
+  

@@ -3,16 +3,19 @@
   display:flex ;
  
   text-align: center;
-  border:2px solid rgb(0, 0, 0);
- border-radius: 10px;
+  border:0.2vh solid rgb(0, 0, 0);
+ border-radius: 2vh;
   background-color: rgb(255, 255, 255);
   
   margin:5vh 20vh 5vh 20vh;
 }
 body {
   background-image: url('https://stories.isu.pub/75957718/images/6_original_file_I0.png');
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
-  object-fit:cover;
 
   justify-content:center;
   display:flex;
@@ -20,15 +23,15 @@ body {
 }
 .addJob {
 top:80%;
-left:70%;
+left:68%;
   display:flex;
   flex-direction: row;
 position:fixed;
   align-items:center;
  justify-content: right;
  right:20%;
- gap:10px;
- width:350px;
+ gap:1vw;
+ width:30vw;
 
 }
 .addJob p {
@@ -45,13 +48,19 @@ position:fixed;
   align-items: center;
   background-color: #f3f3f3;
   color:#000000;
- text-shadow: 1px 1px black;
- border:2px dashed rgb(0, 0, 0) ;
-  border-radius: 60px;
-  height:80px;
-  width:80px;
-  font-size: 40px;
+ text-shadow: 0.3vh 0.3vh black;
+ border:0.5vh dashed rgb(0, 0, 0) ;
+  border-radius: 20vh;
+  height:15vh;
+  width:15vh;
+  font-size: 10vh;
   font-weight: 1000;
+}
+.addJob p {
+background-color: rgb(106, 188, 228);
+color:white;
+border:0.3vh solid black;
+font-size:3vh;
 }
 
 
@@ -60,64 +69,15 @@ position:fixed;
   color:white;
 }
 
-
-
-
-@media (max-width:1000px) {
-  
-  .App {
-    display:flex;
-    height:max-content
-  
-  }
+@media (max-width:800px) {
   .addJob {
-    top:17%;
-    left: -2%;
-  }
-  .addJob button {
-  visibility: hidden;
-  
-  }
-  .addyourjob {
-  
-  }
-  .addJob p {
-   color:white;
-  }
-}
-  
-  
-
-
-@media (max-width:700px) {
- 
-  .addJob button {
     visibility: hidden;
-    
-    }
-  
-}
-
-@media (max-width:600px) {
-  .addJob button {
-    visibility: hidden;
-    
-    }
-  
-  
- 
-}
-@media (max-width:500px) {
- 
-  .addJob button {
-    visibility: hidden;
-    
-    }
-
+  }
 }
 
 
 
+  
 
 
 

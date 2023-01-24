@@ -1,6 +1,7 @@
 
 * {
     font-family: Raleway;
+
 }
 .contacts ::placeholder {
     color:white
@@ -19,25 +20,46 @@
 }
 
 .contacts {
+  
     background-color: black;
     height: auto;
-    width: 25vw;
+ 
     color:white;
     display:flex;
     flex-direction:column;
     align-items: center;
- 
+
     
 }
-.picture:hover {
-  opacity:0.5;
+
+.contacts-image {
+  position: relative;
+  text-align: center;
+  color: white;
   
+
+}
+.contacts-image:hover {
+  opacity:0.5;
+}
+
+
+.contacts-image p {
+ visibility: hidden;
+ font-size:2vw;
+  width:15vw;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
 }
 
 
 .picture {
-  margin-bottom:10px;
-  margin-top:20px;
+  
+  margin-bottom:2vw;
+  margin-top:2vw;
 display:grid;
     height: 15vw;
     width:15vw;
@@ -49,92 +71,74 @@ display:grid;
 
 
 .contactMe {
+
     background-color:#0891b2;
-    width:200px;
-    margin-bottom:20px;
-   
-  
-    
+    display:flex;
+    margin-bottom:3vw;
+    width:20vw;
+    margin-right:3vw;
+    margin-left:3vw;
+    justify-content: center;
+   align-items: center;
+
+}
+
+.contactMe p {
+  font-size:3vw;
+
+
+}
+.allContacts {
+  display:flex;
+ flex-direction: column;
+align-items: center;
+margin-bottom:1vw;
+margin-left:3vw;
+
 }
 
 .contacts-row {
-    width:400px;
-    
+
+display:flex;
+justify-content: center;
+align-items: center;
+
+height:5vw;
+
+
+
+
     
     
    
    
 }
 .contacts-row input {
-    width:180px;
-    font-size:20px;
-    margin-bottom:30px;
+  width:15vw;
+  height:5vw;
+font-size:1.6vw;
+
+}
+svg {
+
+margin:0;
+
 }
 
-@media (max-width: 1000px) {
+@media(max-width:2000px) {
+  .picture {
+    height: 20vw;
+    width:20vw;
+  }
+  
   .contacts-row input {
-    width:120px;
-    font-size:15px;
-   
+    font-size:2vw;
+    width:20vw;
+
   }
-  .contactMe {
-    background-color:#0891b2;
-    width:150px;
-   
-  
-    
+  svg {
+  height:4vw;
+  margin:0;
+  width:2vw;
+  }
 }
-
-}
-
-@media (max-width: 700px) {
-    .contacts-row input {
-      width:100px;
-      font-size:12px;
-      
-  
-    }
-    .contactMe {
-      background-color:#0891b2;
-      width:120px;
-     
-    
-      
-  }
-  
-  }
-  @media (max-width: 600px) {
-    .contacts-row input {
-      width:80px;
-      font-size:10px;
-    
-  
-    }
-    .contactMe {
-      background-color:#0891b2;
-      width:110px;
-     
-    
-      
-  }
-  
-  }
-
-  @media (max-width: 500px) {
-    .contacts-row input {
-      width:80px;
-      
-      font-size:10px;
-  
-    }
-    .contactMe {
-      background-color:#0891b2;
-      width:100px;
-      height: 50px;
-     
-    
-      
-  }
-  
-  }
-  

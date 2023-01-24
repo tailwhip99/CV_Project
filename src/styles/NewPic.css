@@ -1,0 +1,59 @@
+
+.addPic {
+ visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(139, 178, 209);
+    height:10vw;
+    top:15%;
+    width:20vw ;
+    left:40%;
+    color:white;
+}
+.addPic .first-line {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.addPic .first-line p {
+    
+    width:10vw;
+    font-size:1vw;
+   
+}
+.addPic .first-line button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:0.2vw;
+    font-size:1vw;
+    border-radius:20vw;
+   width:2vw;
+   height:2vw;
+   border: 0.1vw solid black;
+}
+.addPic .second-line {
+    display:flex;
+    align-items: center;
+    font-size: 2vw;
+    width:15vw;
+ 
+    gap:2vw;
+}
+.addPic .second-line input {
+    width:10vw;
+    height:1vw;
+}
+
+.addPic .third-line button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:2vw;
+    width:7vw;
+    font-size:1vw;
+}
+

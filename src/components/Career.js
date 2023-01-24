@@ -1,11 +1,22 @@
 import React from 'react'
 import '../styles/Career.css'
+import '../styles/NewJob.css'
+
+
 function deleteJob(key) {
   const chosenJob = document.getElementById(key)
    const Jobs = document.querySelector('.Jobs')
  Jobs.removeChild(chosenJob)
    }
 
+
+function OpenNewJob() {
+ 
+    const newjob = document.querySelector('.newJob')
+    newjob.style.visibility = 'visible'
+  
+  }
+  
 const Career = (props) => {
     const { jobs } = props;
     
@@ -22,6 +33,7 @@ const Career = (props) => {
     </div>
     <div className="Intro">
     <h4>CAREER</h4>
+    <button onClick={()=> OpenNewJob()} >+</button>
    
    
  </div>
@@ -38,9 +50,11 @@ const Career = (props) => {
    <p className='jfromto'>{job.from} -  {job.to} </p>
    <button  onClick={ () => deleteJob(job.id)}>X</button>
    </div>
+
    <div className='c-second-line'>
    <p className='jtitlelocation'>{job.title} | {job.location}</p>
   </div>
+
   <div className='c-third-line'>
    <p className="jdescription">{job.description}</p>
    </div>

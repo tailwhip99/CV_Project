@@ -1,112 +1,185 @@
 .newJob {
   margin:0;
   padding:0;
-    top:20%;
-    left:30%;
-    position: fixed;
-    width:550px;
-    height:330px;
-    background-color: #1f2937;
+  position: fixed;  
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);  
+    width:45vw;
+    height:30vw;
+    padding-top:1vw;
+    background-color: rgb(139, 178, 209);
    visibility: hidden;
-    align-content: center;
-    padding-top:15px;
+  
+
+   box-shadow: 0.5vw  0.6vw 0.35vw rgb(71, 79, 94);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
    
   }
+  .newJob ::placeholder{
+    color:black;
+    font-weight: bolder;
+    font-size:1vw;
+  
+  }
+
  .newJob label {
-  color:aliceblue
+  color:aliceblue;
+  text-shadow: 1vw 1pvw rgb(146, 146, 146);
  }
+ 
  .newJob h1 {
-  color:aliceblue
+font-size:2vw;
+  font-weight:bold;
+  
+  color:rgb(255, 255, 255)
  }
  .newJob label {
-  font-size:13px;
+  font-size:1vw;
+  font-weight: 1000;
  }
 
   .closeButton {
-    
-    width:530px;
+   padding-top: 1vw;
+   
+    width:43vw;
+ 
     display:flex;
    justify-content: end;
-   
+  
      
     }
     .closeButton button {
-      height:20px;
-      width:20px;
-      border-radius: 20px;
-      border:none
+       font-size:2vw;
+      color:aliceblue;
+      font-weight: bold;
+      background-color: black;
+      height:3vw;
+      width:3vw;
+      border-radius: 100px;
+      border:none;
+      display:flex;
+      justify-content: center;
+      align-items: center;
     }
     
-  .newJob_title {
-   
-    display:flex;
-    justify-content: center;
-    gap:10px;
-    margin-bottom:10px;
-  }
+ 
 
-  .newJob_title h1 {
-  
-    margin:0;
-  }
+    .newJob h1 {
+      padding:0;
+
+      
+     
+    }
 
   
   
-  .first-line {
+  .newJob .first-line {
+
+    height:4vw;
    
     display:flex;
-   gap:10px;
+
    justify-content: center;
    align-items: center;
-   
+   gap:1vw;
     
   }
-  .first-line input {
-  
- 
-    font-size: small;
+   
+  .newJob .first-line input {
+
+    
+   height:1vw;
+    font-size: 1vw;
+    }
+    .Company {
+      margin-right:5vw;
+     width:8vw;
     }
 
+ 
   
-.from , .to {
-  width:40px
+ .from , .to {
+  width:3vw;
+  height:3vw;
 }
   
 
 
   
   
-  .second-line {
- display:flex ;
- justify-content: center;
-margin-bottom:10px;
- 
+.newJob .second-line {
+
+    display:flex;
+
+ align-items: center;
+ margin-left:2vw;
+
+margin-bottom:0.5vw;
+height:5vw;
  
   }
 
-  .second-line input {
-    
-   
-    font-size: small;
+  .newJob  .second-line .left {
+    margin-right:2vw;
   }
+  
 
+  .newJob  .second-line input {
+    height:1vw;
+    font-size: 1vw;
+ 
+  }
+  .JobTitle {
+      
+    margin-right:4.5vw;
+    margin-left:1vw;
+    width:9vw;
+  }
+.location  {
+
+  margin-left:1vw;
+  width:6vw;
+}
   .third-line {
     display:flex;
     justify-content: center;
-    margin-bottom:10px;
+    margin-bottom:1vw;
   }
   .third-line textarea {
-    width: 360px;
-    height: 70px;
+    width: 28vw;
+    height: 5vw;
   }
 
   .fourth-line {
     display:flex;
     justify-content: center;
-    margin-bottom:10px;
+    margin-bottom:1vw;
   }
   .fourth-line textarea {
-    width: 360px;
-    margin-left:10px;
+    width: 28vw;
+    margin-left:1vw;
+    height:2vw;
    
   }
+  .addTask{
+margin-bottom:1vw;
+    width:10vw;
+    height:2vw;
+    font-size: 1vw;
+    background-color: rgb(255, 255, 255);
+
+    border: 1px solid black;
+    
+  }
+
+  .addTask:hover {
+    background-color: aquamarine;
+  }
+
+ 
+    
+  
+  
