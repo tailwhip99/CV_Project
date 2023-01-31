@@ -78,13 +78,13 @@ font-size:2vw;
   
   .newJob .first-line {
 
-    height:4vw;
+    height:3vw;
    
     display:flex;
 
    justify-content: center;
    align-items: center;
-   gap:1vw;
+   gap:0.7svw;
     
   }
    
@@ -118,7 +118,7 @@ font-size:2vw;
  margin-left:2vw;
 
 margin-bottom:0.5vw;
-height:5vw;
+height:3vw;
  
   }
 
